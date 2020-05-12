@@ -15,15 +15,15 @@ ghc-options: -Wall
 
 dependencies:
   - base >= 4.7 && < 5
-  - containers >= 0.5.7 && < 0.6.1
-  - directory >= 1.3 && < 1.4
-  - formatting >= 6.2 && < 6.4
-  - lens >= 4.15 && < 4.18
-  - servant >= 0.9 && < 0.17
-  - servant-foreign >= 0.9 && < 0.16
-  - text >= 1.2 && < 1.3
-  - time >= 1.6 && < 1.9
-  - wl-pprint-text >= 1.1 && < 1.3
+  - containers
+  - directory
+  - formatting
+  - lens
+  - servant
+  - servant-foreign
+  - text
+  - time
+  - wl-pprint-text
 
 library:
   source-dirs: src
@@ -35,15 +35,15 @@ tests:
       - src
       - test
     dependencies:
-      - aeson >= 1.0 && < 1.5
-      - hspec >= 2.4.1 && < 2.8
-      - http-api-data >= 0.3.7 && < 0.4.2
+      - aeson
+      - hspec
+      - http-api-data
 
 benchmarks:
   generate-test:
     main: example/Generater.hs
     dependencies:
-      - aeson >= 1.0 && < 1.5
-      - http-api-data >= 0.3.7 && < 0.4.2
+      - aeson
+      - http-api-data
       - servant-kotlin
-      - shelly >= 1.6.8 && < 1.10
+      - shelly
